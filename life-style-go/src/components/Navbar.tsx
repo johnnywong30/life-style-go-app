@@ -4,8 +4,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu } from "@headlessui/react";
-import styles from "../styling/navbar.module.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -55,18 +53,18 @@ export default function Navbar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-cyan-700  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setOpen(!open)}>
-                    About
+                  <Link href="/ingredients" onClick={() => setOpen(!open)}>
+                    Ingredients
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0   hover:bg-cyan-700  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setOpen(!open)}>
-                    Blogs
+                  <Link href="/recipes" onClick={() => setOpen(!open)}>
+                    Recipes
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0   hover:bg-cyan-700  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setOpen(!open)}>
-                    Contact
+                  <Link href="/register" onClick={() => setOpen(!open)}>
+                    Sign Up
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0   hover:bg-cyan-700  border-cyan-900  md:hover:text-cyan-600 md:hover:bg-transparent">
